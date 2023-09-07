@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_background_color"
+    elevation = "4dp"
+    android:theme="@style/Base.Theme.Chara">
+
+    <TextView
+        android:id="@+id/CurrentDayDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="11/11/2023"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="15dp"/>
+
+    <ImageButton
+        android:id="@+id/editMoodButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/custom_button_enabled"
+        android:contentDescription="@string/happy"
+        android:minHeight="45dp"
+        android:padding="9dp"
+        android:scaleType="fitStart"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/change_mood"
+        tools:visibility="visible"
+        android:layout_marginEnd="10dp"/>
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:minHeight="45dp"
+        app:srcCompat="@android:drawable/ic_menu_save"
+        android:padding="9dp"
+        android:scaleType="fitStart"
+        tools:visibility="visible"
+        android:visibility="visible"
+        android:background="@drawable/custom_button_enabled"
+        android:contentDescription="Save_Button"/>
+</androidx.appcompat.widget.Toolbar>

@@ -1,9 +1,22 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.Chara" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:textColor">#F4EEFF</item>
+        <item name="android:background">#424874</item>
+        <item name="android:fontFamily">"sans-serif-medium"</item>
     </style>
+
+    <style name="CalendarTheme">
+    </style>
+
+    <style name="Transparent" paren="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
 
     <style name="Theme.Chara" parent="Base.Theme.Chara" />
 </resources>

@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Chara</string>
+    <string name="super_happy">&#x1F929;</string>
+    <string name="happy">&#x1F60A;</string>
+    <string name="ok">&#x1F610;</string>
+    <string name="sad">&#x1F641;</string>
+    <string name="super_sad">&#x1F622;</string>
+    <string name="clown">&#x1F921;</string>
+    <string name="null_face">&#x1F636;</string>
+
 </resources>

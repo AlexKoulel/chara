@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/chara_icon_transperent" />
+
+    <Button
+        android:id="@+id/JournalButton"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/custom_button_enabled"
+        android:fontFamily="sans-serif-medium"
+        android:text="Journal"
+        android:textColor="#F4EEFF"
+        android:textSize="15dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="TextSizeCheck" />
+
+    <Button
+        android:id="@+id/NotificationButton"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/custom_button_enabled"
+        android:fontFamily="sans-serif-medium"
+        android:text="Notifications"
+        android:textColor="#F4EEFF"
+        android:textSize="15dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/JournalButton"
+        app:layout_constraintStart_toStartOf="@+id/JournalButton"
+        app:layout_constraintTop_toBottomOf="@+id/JournalButton"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/InfoButton"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/custom_button_enabled"
+        android:fontFamily="sans-serif-medium"
+        android:text="Info"
+        android:textColor="#F4EEFF"
+        android:textSize="15dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/NotificationButton"
+        app:layout_constraintStart_toStartOf="@+id/NotificationButton"
+        app:layout_constraintTop_toBottomOf="@+id/NotificationButton"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/version_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="v 0.1"
+        android:textColor="#F4EEFF"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
