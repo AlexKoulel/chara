@@ -1,15 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background"
+    >
 
-    <TextView
-        android:id="@+id/CurrentDayDate"
+    <include
+        android:id="@+id/currentDatNotesToolbar"
+        layout="@layout/toolbar" />
+
+    <EditText
+        android:id="@+id/entryText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ex: 4 August 2023" />
+        android:layout_below="@+id/TopNavNotes"
+        android:hint="What are you thinking?"
+        android:minHeight="48dp"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="#F4EEFF"/>
+
 
 </LinearLayout>

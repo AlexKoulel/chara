@@ -2,19 +2,22 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/app_icon"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/app_icon"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Chara"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:targetApi="31">
         <activity
-            android:name=".DiaryActivity"
-            android:exported="true">
+            android:name=".HomeScreen"
+            android:exported="true"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,8 +25,28 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity" >
+            android:name=".DiaryActivity"
+            android:screenOrientation="portrait">
          </activity>
+        <activity
+            android:name=".DiaryActivityReadOnly"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".InfoScreen"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".NotificationsScreen"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+        android:name=".ViewEntries" >
+        </activity>
     </application>
 
 </manifest>

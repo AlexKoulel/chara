@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Transparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background_color"
+    >
+
+    <ImageButton
+        android:id="@+id/super_sad_mood"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/custom_button_enabled"
+        android:padding="8dp"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/sad_mood"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/super_sad" />
+
+    <ImageButton
+        android:id="@+id/sad_mood"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/custom_button_enabled"
+        android:padding="8dp"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toBottomOf="@+id/super_sad_mood"
+        app:layout_constraintStart_toEndOf="@+id/super_sad_mood"
+        app:layout_constraintTop_toTopOf="@+id/super_sad_mood"
+        app:srcCompat="@drawable/sad" />
+
+    <ImageButton
+        android:id="@+id/ok_mood"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/custom_button_enabled"
+        android:padding="8dp"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toBottomOf="@+id/sad_mood"
+        app:layout_constraintStart_toEndOf="@+id/sad_mood"
+        app:layout_constraintTop_toTopOf="@+id/sad_mood"
+        app:srcCompat="@drawable/ok" />
+
+    <ImageButton
+        android:id="@+id/happy_mood"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/custom_button_enabled"
+        android:padding="8dp"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toBottomOf="@+id/ok_mood"
+        app:layout_constraintStart_toEndOf="@+id/ok_mood"
+        app:layout_constraintTop_toTopOf="@+id/ok_mood"
+        app:srcCompat="@drawable/happy" />
+
+    <ImageButton
+        android:id="@+id/super_happy_mood"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/custom_button_enabled"
+        android:padding="8dp"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toBottomOf="@+id/happy_mood"
+        app:layout_constraintStart_toEndOf="@+id/happy_mood"
+        app:layout_constraintTop_toTopOf="@+id/happy_mood"
+        app:srcCompat="@drawable/super_happy" />
+</androidx.constraintlayout.widget.ConstraintLayout>

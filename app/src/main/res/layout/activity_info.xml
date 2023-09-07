@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background">
+
+    <ImageView
+        android:id="@+id/infoAppLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="87dp"
+        android:layout_marginBottom="68dp"
+        app:layout_constraintBottom_toTopOf="@+id/infoText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/chara_icon_transperent" />
+
+    <TextView
+        android:id="@+id/infoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="105dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Additional icons by Freepik"
+        android:textColor="#F4EEFF"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/githubImage"
+        app:layout_constraintEnd_toEndOf="@+id/infoAppLogo"
+        app:layout_constraintStart_toStartOf="@+id/infoAppLogo"
+        app:layout_constraintTop_toBottomOf="@+id/infoAppLogo" />
+
+    <TextView
+        android:id="@+id/developerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="App developed by Alex Koulelis"
+        android:textColor="#F4EEFF"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/infoText"
+        app:layout_constraintStart_toStartOf="@+id/infoText"
+        app:layout_constraintTop_toBottomOf="@+id/infoText" />
+
+    <ImageView
+        android:id="@+id/kofiImage"
+        android:layout_width="211dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="11dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/githubImage"
+        app:srcCompat="@drawable/kofi_button_black" />
+
+    <ImageView
+        android:id="@+id/githubImage"
+        android:layout_width="55dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/kofiImage"
+        app:layout_constraintStart_toStartOf="@+id/kofiImage"
+        app:layout_constraintTop_toBottomOf="@+id/infoText"
+        app:srcCompat="@drawable/githubmark" />
+</androidx.constraintlayout.widget.ConstraintLayout>
